@@ -1,0 +1,118 @@
+.LoginScreen{
+    position: relative;
+}
+.login__logo{
+    width: 150px;
+    height: 80px;
+    float: left;
+    padding-left: 2rem;
+
+}
+.login__button{
+    float: right;
+    margin: 25px 50px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #e50914;
+    outline-width: 0;
+    border:none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.login__background{
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/e178a4e7-4f52-4661-b2ae-41efa25dca7c/540b12f7-3c97-40dd-a3e4-bc820ba5f741/BD-en-20210222-popsignuptwoweeks-perspective_alpha_website_small.jpg) center no-repeat;
+    background-size: cover;
+}
+.login__gradient{
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+}
+.loginScreen__body{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.loginScreen__title{
+    color: white;
+    font-size: 3.125rem;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.loginScreen__subtitle{
+    color: white;
+    font-size: 1.625rem;
+    font-weight: 400;
+    text-align: center;
+}
+.loginScreen__subsubtitle{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+    padding: 20px 10px;
+}
+/* .loginScreen__body > form > input{
+   
+    padding: 20px;
+    font-size: 1.425rem;
+    width: 60%;
+}
+.login__submit{
+    box-sizing: border-box;
+    padding: 18px;
+    width: 30%;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.625rem;
+    margin: 0 !important;
+    min-height: 60px;
+    border-radius: 5px;
+    
+} */
+form{
+    margin-left: 30px;
+}
+.loginScreen__body > form > input{
+    padding: 20px 10px;
+    width: 50%;
+    font-size: 1.425rem;
+   
+}
+.login__submit{
+    padding: 20px 10px;
+    background-color: #e50914;
+    color: white;
+    font-size: 1.625rem;
+    border-radius: 5px;
+}
+@media(max-width:460px){
+    .loginScreen__body > form > input{
+        padding: 10px 10px;
+        width: 30%;
+        font-size: 1rem;
+    }
+    .login__submit{
+        padding: 10px 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+}
+@media(max-width:720px){
+    .loginScreen__body > form > input{
+        padding: 10px 10px;
+        width: 30%;
+        font-size: 1rem;
+        
+    }
+    .login__submit{
+        padding: 10px 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+}
