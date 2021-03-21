@@ -1,0 +1,260 @@
+.singleMovie__details{
+    /* background-image: linear-gradient(to right, rgba(76.08%, 20.39%, 9.80%, 0.70) 150px, rgba(76.08%, 20.39%, 9.80%, 0.84) 100%); */
+    background-image: linear-gradient(to right, rgba(12.16%, 9.80%, 11.37%, 1.00) 150px, rgba(12.16%, 9.80%, 11.37%, 0.84) 100%);
+
+}
+
+
+.singleMovie__title{
+    color: white;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin: 50px 0 10px 70px;
+}
+
+.singleMovie__info{
+    list-style: none;
+    margin: 5px 0 10px 70px;
+    color: white;
+    font-weight: 500;
+}
+
+.singleMovie__info__gray{
+    color: #DA998D;
+}
+
+.singleMovie__rating{
+    margin: 5px 0 0px 70px;
+}
+
+.singleMovie__rating__rate{
+    color: white;
+}
+
+.singleMovie__overview__title{
+  color: white;
+  font-weight: 700;
+  margin: 15px 0 0 70px;
+}
+
+.singleMovie__overview{
+  color: white;
+  margin: 5px 0 0 70px;
+}
+
+.singleMovie__creator{
+  color: white;
+  margin: 15px 0 0 70px;
+}
+
+.singleMovie__creator__title{
+  color: white;
+  margin: 2px 0 0 70px;
+}
+
+.line__divider{
+  height: 3px;
+  width: 300px;
+  background-color: gold;
+  margin: 10px auto;
+}
+.singleMovie__over{
+  margin-left: 20px ;
+}
+
+.singleMovie__cast__wrap{
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+ 
+}
+
+.singleMovie__cast__wrap::-webkit-scrollbar{
+  display: none;
+}
+
+.singleMovie__cast__head{
+   background: #EEF2F7;
+   padding: 30px 20px;
+}
+
+.singleMovie__cast{
+  text-align: start;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.singleMovie__cast__card{
+  max-width: 200px;
+  min-height: 300px;
+  max-height: 400px;
+  margin: 10px 20px;
+  padding: 10px;
+  color: #000;
+  background-color: white;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+
+.singleMovie__cast__name{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.singleMovie__cast__title{
+  text-align: center;
+}
+
+
+
+
+
+
+
+@media (min-width: 1281px) {
+  
+    .singleMovie__poster{
+        max-width: 350px;
+        margin-left: 200px !important ;
+     }
+     
+     .singleMovie__title{
+        margin-left: 90px ;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .singleMovie__poster{
+        max-width: 350px;
+     }
+
+     
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .singleMovie__title{
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+    
+.singleMovie__info{
+  margin: 5px 0 10px 10px;
+}
+
+.singleMovie__rating{
+  margin: 5px 0 0px 10px;
+}
+
+.singleMovie__overview__title{
+margin: 5px 0 0 10px;
+}
+
+.singleMovie__overview{
+margin: 5px 0 0 10px;
+}
+
+.singleMovie__creator{
+margin: 15px 0 0 10px;
+}
+
+.singleMovie__creator__title{
+margin: 2px 0 0 10px;
+}
+
+.singleMovie__over{
+margin-left: 10px ;
+}
+
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .singleMovie__title{
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+       
+.singleMovie__info{
+  margin: 5px 0 10px 10px;
+}
+
+.singleMovie__rating{
+  margin: 5px 0 0px 10px;
+}
+
+.singleMovie__overview__title{
+margin: 5px 0 0 10px;
+}
+
+.singleMovie__overview{
+margin: 5px 0 0 10px;
+}
+
+.singleMovie__creator{
+margin: 15px 0 0 10px;
+}
+
+.singleMovie__creator__title{
+margin: 2px 0 0 10px;
+}
+
+.singleMovie__over{
+margin-left: 10px ;
+}
+
+    
+  }

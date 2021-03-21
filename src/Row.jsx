@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useHistory } from 'react-router'
 import axios from './axios'
 import './Row.css'
 const Row = ({title, fetchurl, isLargeRow}) => {
@@ -13,6 +14,13 @@ const Row = ({title, fetchurl, isLargeRow}) => {
     }, [fetchurl])
     console.log(movies);
 
+    const history = useHistory()
+
+    const gotoMovie = (movie) => {
+        history.push(`/${ (isLargeRow && 'tv') || movie.media_type === 'tv' ? 'tv' : 'movie'}/${movie.id}`)
+        console.log(movie.media_type === 'movie' ? 'movie' : 'tv')
+    }
+
     const base_url = 'https://image.tmdb.org/t/p/original'
 
     return (
@@ -22,14 +30,16 @@ const Row = ({title, fetchurl, isLargeRow}) => {
             <div className="row__posters">
                 {
                     movies.map((movie) => (
-                        ((isLargeRow && movie.poster_path) || (!isLargeRow && movie.backdrop_path)) && (
-                            <div>
+                        ((isLargeRow && movie.poster_path) || (!isLargeRow && movie.poster_path)) && (
+                            <div className='row__wrap'>
                             
                             <img
+                                onClick={() => gotoMovie(movie)}
                                 key={movie.id}
-                                className={`row__poster ${isLargeRow && "row__posterLarge"}`} 
-                                src={`${base_url}${ isLargeRow ? movie.poster_path : movie.backdrop_path}`} alt={movie.name}
+                                className={`row__poster row__posterLarge`} 
+                                src={`${base_url}${movie.poster_path }`} alt={movie.name}
                             />
+                            {/* <span className='row__title'>{movie.title || movie.original_title}</span> */}
                         </div>
                         )
                     ))

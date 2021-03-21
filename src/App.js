@@ -8,9 +8,12 @@ import {
 } from "react-router-dom";
 import ProfileScreen from './ProfileScreen/ProfileScreen'
 import LoginScreen from './LoginScreen/LoginScreen'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Auth } from './firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice';
+import SingleMovie from './singleMovie/SingleMovie'
+
 
 function App() {
   const user = useSelector(selectUser);
@@ -30,12 +33,24 @@ function App() {
     })
     return unsubscribe;
   }, [dispatch])
+
+
   return (
     <div className="App">
       <Router>
         {
           !user ? <LoginScreen /> : (
             <Switch>
+
+              <Route path='/movie/:id'>
+                <SingleMovie />  
+              </Route>
+
+              <Route path='/tv/:id'>
+                <SingleMovie />
+              </Route>
+              
+              
               <Route path='/profile'>
                 <ProfileScreen />
               </Route>

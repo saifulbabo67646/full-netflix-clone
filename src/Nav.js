@@ -15,7 +15,7 @@ const Nav = () => {
     }, [])
     const history = useHistory()
     return (
-        <div className={`nav ${show && 'nav__black'}`}>
+        <div className={`navs ${show && 'nav__black'}`}>
             <div className='nav__contents'>
                  <img onClick={() => history.push('/')} src='https://www.stickpng.com/img/download/580b57fcd9996e24bc43c529/image' className='nav__img' />
             

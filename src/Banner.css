@@ -32,6 +32,11 @@
         rgba(37, 37, 37, 0.61),
         #111
     );
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .banner__button{
     cursor: pointer;

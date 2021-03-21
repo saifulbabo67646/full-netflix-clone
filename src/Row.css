@@ -28,3 +28,19 @@
 .row__posterLarge{
     max-height: 250px;
 }
+
+/* .row__wrap{
+    position: relative;
+} */
+
+/* .row__title{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    width: 100px;
+    font-weight: 600;
+} */

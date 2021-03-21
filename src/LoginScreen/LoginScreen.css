@@ -77,6 +77,8 @@
 } */
 form{
     margin-left: 30px;
+    display: flex;
+    justify-content: center;
 }
 .loginScreen__body > form > input{
     padding: 20px 10px;
@@ -102,6 +104,28 @@ form{
         font-size: 1rem;
         border-radius: 5px;
     }
+    .login__logo{
+        width: 100px;
+    }
+    .loginScreen__title{
+        font-size: 1.7rem;
+    }
+    .loginScreen__body{
+        top: 20%;
+    }
+    .loginScreen__subtitle{
+        font-size: 1.25rem;
+    }
+    .loginScreen__subsubtitle{
+        font-size: 1rem;
+    }
+    form{
+        flex-direction: column;
+    }
+    .loginScreen__body > form > input{
+        width: 200px !important;
+    }
+    
 }
 @media(max-width:720px){
     .loginScreen__body > form > input{

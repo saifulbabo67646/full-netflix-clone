@@ -5,7 +5,7 @@ import requests from './Request'
 
 import './Banner.css'
 const Banner = () => {
-    const [movie, setMovie] = useState([])
+    const [movie, setMovie] = useState({})
 
     useEffect(() => {
         const fetchData = async () => {
