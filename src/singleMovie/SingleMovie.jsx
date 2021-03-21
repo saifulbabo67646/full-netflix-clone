@@ -87,15 +87,15 @@ const SingleMovie = () => {
                             <img className='singleMovie__poster img-fluid rounded img-thumbnail mx-5 my-4' src={`https://www.themoviedb.org/t/p/w600_and_h900_bestv2${movie.poster_path}`} alt=""/>
                         </div>
                         <div className='col-6 col-md-8 text-center text-md-left mx-md-5'>
-                            <h2 className='singleMovie__title'>{movie.title}</h2>
-                            <ul className='singleMovie__info'><li> <span className='singleMovie__info__gray'>Realease Date: </span> {movie.release_date} </li> <li> <span className='singleMovie__info__gray'>Genres:  </span> {genres.map(genre => <span>{genre.name},</span>)} </li> <li> <span className='singleMovie__info__gray'>Length: </span> {movie.runtime} min</li></ul>
+                            <h2 className='singleMovie__title'>{movie.title || movie.name || movie.original_name}</h2>
+                            <ul className='singleMovie__info'><li> <span className='singleMovie__info__gray'>Realease Date: </span> {movie.release_date || movie.first_air_date} </li> <li> <span className='singleMovie__info__gray'>Genres:  </span> {genres.map(genre => <span>{genre.name},</span>)} </li> {movie.runtime && <li> <span className='singleMovie__info__gray'>Length: </span> {movie.runtime} min</li>} </ul>
                             
                             <div className='singleMovie__over'>
                                 <h4 className='singleMovie__rating'><span className='singleMovie__info__gray'>Rating: </span> <span className='singleMovie__rating__rate'>{movie.vote_average}</span></h4>
                                 <h3 className='singleMovie__overview__title'>Overview</h3>
                                 <p className='singleMovie__overview'>{movie.overview}</p>
-                                <h5 className='singleMovie__creator'>{movie.tagline}</h5>
-                                <p className='singleMovie__creator__title'>Tagline</p>
+                                <h5 className='singleMovie__creator'>{movie.tagline && movie.tagline}</h5>
+                                {movie.tagline && <p className='singleMovie__creator__title'>Tagline</p>} 
                             </div>
 
                         </div>
